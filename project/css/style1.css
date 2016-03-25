@@ -1,0 +1,18 @@
+
+body { background-image: url(http://www.myfreetextures.com/wp-content/uploads/2011/06/brushedsteel4.jpg)  }
+
+img { width: 300px;
+		height:300px; }
+		
+h1 { text-align: center;
+	font-size: 60px;}
+
+a:visited { color: lightpink; }
+a:link {color: black;}
+a:hover {color: lightblue;}
+a:active {color: yellow;}
+
+.erste { text-align: center; }
+
+h2 { font-size: 40px; }
+ 
