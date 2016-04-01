@@ -1,0 +1,75 @@
+* { box-sizing: border-box; }
+body { background-color: lightgrey; }
+#alles { max-width: 1400px; 
+			margin: auto;}
+h1 { font-size: 50px; 
+		background-color: white; 
+		margin-top: -4px;
+		animation: title 5s linear infinite; 
+}
+@keyframes title { 
+		0% { color: black; }
+		25% { color: lightblue; }
+		50% { color: pink; }
+		75% { color: grey; }
+		100% { color: navy; }
+}
+
+
+#row1, #row2{
+	overflow-y: auto;
+}
+
+
+#row2{
+	padding-top: 30px;
+}
+
+
+
+
+
+#row1 img { float: left; 
+			border: 2px solid white;	
+}
+.row1pic { width: 33%; height: 300px;
+			float: left; 
+			padding-left: 91px;}
+
+#row2 img { float: left;
+			border: 2px solid white; 
+			}
+.row2pic { width: 33%; height: 300px;
+			float: left; 
+			padding-left: 91px;
+}
+
+#erstellung { float: right;
+				font-size: 20px;
+				text-transform: uppercase
+				;}
+#erstellung { animation: 4s infinite 200ms ;}
+
+@keyframes endung { 
+
+			0% { opacity: 1; transform: translateX(0 ); }
+			20% { opacity: 1; transform: translateX(0 ); }
+			40% { opacity: 0.8; transform: translateX(-250px); }
+			60% { opacity: 0.4; transform: translateX(-500px); }
+			80% { opacity: 0; transform: translateX(-750px); }
+			100% { opacity: 0; transform: translateX(-1000px); }
+}
+
+#erstellung { animation: endung 8s linear infinite; }
+
+
+
+
+
+
+
+
+
+
+
+
