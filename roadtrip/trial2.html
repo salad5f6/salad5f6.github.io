@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		#alles { max-width: 1400px;
+			margin:auto; }
+			* { box-sizing: border-box; }
+			.menualles a { font-size: 30px;
+			}
+
+			.menu { float: left;
+				width: 25%; 
+				text-align: center;
+			}
+			.menualles a:link { color: black;
+				text-decoration: none; }
+				.menualles { width: 100%; height: 450px;
+					border-style: solid;
+					border-color: #CCD6DA; 
+					position: relative; }
+					.menualles { box-shadow: 0 2px 2px 0; }
+
+
+					#banner { z-index: 0;
+						font-size: 70px;
+						position: absolute;
+						top: 7%;
+						left: 26%;
+						color: white;
+						opacity: 0.6;} 
+
+						
+						#vertical-menu > li > ul { display: none ;}
+						#vertical-menu > li:hover > ul {display: block;
+							float: left; ;
+						}
+						#vertical-menu > li { list-style-position: inside; list-style-type: none; padding-top: 25px; font-size: 20px;}
+
+
+						#vertical-menu a:link { color: black; text-decoration: none; }
+						#vertical-menu a:visited { color: white; }
+						#vertical-menu { border: 2px solid;
+							border-color: #CCD6DA; width: 200px; height: 600px; padding: 0;
+							box-shadow: 0 4px 4px 0; background-color: #66AAE0;
+						}
+						#vertical-menu > li > ul { 
+							list-style-position: inside; list-style-type: none; 
+							display: none;  position: absolute}
+							#vertical-menu li { height: 100px; text-align: center; border: 1px solid; border-color:#CCD6DA;}
+
+							#vertical-menu > li > ul li { height: 90px; padding-top: 20px; width: 200px; font-size: 20px; background-color: #66AAE0;
+							}
+							.produkte {position: relative;}
+							#produkte { top: 0px; left: 200px; padding: 0;}
+
+							.mccafe {position: relative;}
+							#mccafe { top: 0px; left: 200px; padding: 0;}
+
+							.famiellien {position: relative;}
+							#famiellien { top: 0px; left: 200px; padding: 0;}
+
+							.karriere {position: relative;}
+							#karriere { top: 0px; left: 200px; padding: 0;}
+
+							.uberuns {position: relative;}
+							#uberuns{ top: 0px; left: 200px; padding: 0;}
+
+							.franchise {position: relative;}
+							#franchise { top: 0px; left: 200px; padding: 0;}
+
+
+							#inhalt { padding: 20px; width: calc(100% - 200px); overflow-x: hidden; }
+							#wrapper, .menualles{
+								float: left;
+								width: 100%;
+							}
+							#div-left, #inhalt{
+								float: left;
+							}
+
+							.bild img { width: 100%; height: 300px; float: left;}
+							
+							#aussprechen h1 { text-align: center;
+								font-size: 40px;
+								text-transform: uppercase;
+								background-color: #66AAE0;
+								color: white;
+								border: 2px solid;
+								border-color: #CCD6DA;
+								height: 100px;
+								box-shadow: 0 4px 4px 0;
+								line-height: 81px; margin-top: 0;}
+								.bild img { transition: all 2s linear ; }
+								.bild img:hover { transform: scale(1.2); }
+								.bild { width: 30%; height: 300px; float: left; overflow: hidden; margin:20px; border: 3px solid; border-color: #66AAE0; }
+								#gutschein { position: fixed; top: 700px;
+									right: 7px; }
+
+
+
+							@keyframes angebot {  
+										0% { transform: translateX(0) ; color: green ;}
+										20% { transform: translateX(240px); color: navy;  }
+										40% { transform: translateX(480px); color: orange;}
+										60% { transform: translateX(720px); color: red; }
+										80% { transform: translateX(960px); color: blue;}
+										100% { transform: translateX(1200px); color: pink; } 
+									}
+							#angebot { animation: angebot 5s linear infinite;}
+
+
+								</style>
+							</head>
+							<body>				
+
+								<div class="menualles">
+									<img src="roadtrip.jpg" width="100%" height="400px" />
+									<div id="banner">
+										<h1> Road trip </h1>
+									</div>
+									<div class="menu"><a href="menu.html"> Roadtrip Danang </a></div>
+									<div class="menu"><a href="menu.html"> Roadtrip Hanoi </a></div>
+									<div class="menu"><a href="menu.html"> Roadtrip Alabama</a></div>
+									<div class="menu"><a href="menu.html"> Roadtrip Hongkong </a></div>
+								</div>
+
+
+								<id id="wrapper">
+
+									<div id="div-left">
+										<ul id="vertical-menu">
+											<li class="produkte"> 
+												<a href="#"><span>Roadprodukte</span>  </a>
+												<ul id="produkte">
+													<li id="gebratebhahn"> <a href="#"> Deutschkuche </li>
+													<li id="burgers"> <a href="#"> burgers </li>
+												</ul>
+											</li>
+											<li class="mccafe"> <a href="#"> Roadcafe </a>
+												<ul id="mccafe">
+													<li> <a href="#"> koffee </li>
+													<li> <a href="#"> andere Getranke </li>
+												</ul>
+											</li>
+											<li class="famiellien"> <a href="#"> famiellien </a>
+												<ul id="famiellien">
+													<li> <a href="#"> kleine Famiellie </li>
+													<li> <a href="#"> grosse Famiellie  </li>
+												</ul>
+											</li>
+											<li class="karriere"> <a href="#"> karriere </a>
+												<ul id="karriere">
+													<li> <a href="#"> dauerhaft </li>
+													<li> <a href="#"> teilzeit </li>
+												</ul>
+											</li>
+											<li class="uberuns"> <a href="#"> uber uns </a>
+												<ul id="uberuns">
+													<li> <a href="#"> kontacts </li>
+													<li> <a href="#"> orte </li>
+												</ul>
+											</li>
+											<li class="franchise"> <a href="#"> franchise </a>
+												<ul id="franchise">
+													<li> <a href="#"> USA </a> </li>
+													<li> <a href="#"> Vietnam </a></li>
+												</ul>
+											</li>
+										</ul>
+										<div id="liefern">
+											<a href="#"><img src="liefern.png" width="200px" height="200px" title="delivery"></a>
+										</div>
+
+									</div>
+
+
+									<div id="inhalt">	
+
+										<div id="aussprechen">
+											<h1> herzlich wilkommen zu Roadtrip</h1>
+
+
+										</div>
+
+
+
+
+										<div id="row1">
+											<div class="bild"><a href="#"><img src="burger.jpg"></a></div>
+											<div class="bild"><a href="#"><img src="pretzel.jpg"></a></div>
+											<div class="bild"><a href="#"><img src="weis.jpg"></a> </div>
+										</div>
+
+
+
+
+										<div id="angebot" style="font-size: 30px">
+											<p><i> Deutsche Kuche - ice cold Bier - massiv Gutschein </i></p>
+										
+										</div>
+
+
+
+
+
+
+										<div id="row2">
+											<div class="bild"><a href="#"><img src="bier.jpg"></a></div>
+											<div class="bild"><a href="#"><img src="wurst.jpg" ></a></div>	
+											<div class="bild"><a href="#"><img src="kuchen.jpg"></a></div>
+										</div>
+										
+
+										<div id="gutschein">
+											<a href="#"><img src="gutschein.png" width="50px" height="50px" title="discount"></a>
+										</div>
+										
+
+
+
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								</div>
+
+
+							</body>
+							</html>
