@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body {
+			background-image: url("abstract-design.jpg");
+			margin: 0;
+			padding: 0;
+			overflow-y:scroll;
+
+		}
+		.wrap {
+			width: 1200px;
+		}
+		.grid {
+			float: left;
+			padding: 70px;
+		}
+		.card{
+			position: relative;
+			float: left;
+		}
+		.card .back { 
+			transform: rotateY(180deg);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.card.active .back{
+			transform: rotateY(0deg);
+		}
+		.card.active .front{
+			transform: rotateY(180deg);
+		}
+		.card .front, .card .back {
+			transition: all 0.5s;
+			backface-visibility: hidden;
+		}
+
+		.card { margin-right: 50px; margin-bottom: 50px;
+			line-height: 0;
+		}
+		.card:hover { box-shadow: 0 5px 5px 0;
+
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="content">
+			<div class="grid">
+				<div class="card">
+					<div class="front">
+						<img src="kanye.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<img src="grumpy.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+				
+				<div class="card">
+					<div class="front">
+						<img src="kidrock.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<img src="duongvu.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<img src="ly.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<img src="simon.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<img src="conan.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<img src="ny.jpg" width="200px" height="270px">
+					</div>
+					<div class="back">
+						<img src="dota.jpg" width="200px" height="270px">
+					</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+	</div>
+
+	<script>
+		
+		var stt = 0;
+		var image = [
+
+			{ imageList: [ {"Kanye.jpg"},{"dota.jpg"};]
+		},
+			{ imageList: [ {"grumpy.jpg"},{"dota.jpg"};]
+		},
+			{ imageList: [ {"kidrock.jpg"},{"dota.jpg"};]
+		},
+			{ imageList: [ {"duonguv.jpg"},{"dota.jpg"};]
+		},
+			{ imageList: [ {"lyn.jpg"},{"dota.jpg"};]
+		},
+			{ imageList: [ {"simon.jpg"},{"dota.jpg"};]
+		},
+			{ imageList: [ {"conan.jpg"},{"dota.jpg"};]
+		},
+			{ imageList: [ {"ny.jpg"},{"dota.jpg"};]
+		},
+		];
+
+		function duntknow(stt){
+
+			for(var i =0; i< image.length; i++){
+				image[stt].imageList = shuffle(image[stt].imageList)
+			}
+		};
+		function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+	</script>
+
+
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$('.card').click(function () {
+
+			$(this).toggleClass('active')
+		});
+
+
+	</script>
+
+</body>
+</html>
