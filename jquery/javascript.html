@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+		body {box-sizing: border-box; background-image: url("http://tipministries.com/wp-content/uploads/2015/11/Grey-Background-48.jpg");}
+
+		h1{ background-color: #45ACFF; color: white; width: 600px; height: 70px; width: 800px; margin-left: 200px; font-size: 45px; padding-top: 15px; 
+			border:2px solid; border-color: black}
+			#alles { width: 1000px; height: 800px; }
+
+			
+
+			#question { height: 70px; width: 650px; background-color: #E77C74; margin-left: 200px; margin-top: 70px; font-size: 27px; text-align: center; padding-top: 10px; border: 1px solid; } 
+			.answer { height: 50px; width: 450px; background-color: #E77C74; margin-top: 15px; margin-left: 200px; font-size: 25px;     padding-left: 50px;     padding-top: 15px; border: 1px solid; }
+			.answer:hover { box-shadow: 0 3px 3px 0; }
+			.answer:active { box-shadow: 0 0 1px 1px;  }
+			#next { height: 40px; width: 200px; background-color: #E77C74; margin-top: 15px; margin-left: 200px; text-align: center; font-size: 23px; padding-top: 10px; border: 1px solid;}
+			#next:hover {box-shadow: 0 5px 5px 0;  }
+			button {}
+
+		</style>
+
+	</head>
+	<body>
+
+		<h1 style="text-align: center;"> Quiz macht Spass </h1>
+
+
+		<div id="alles">
+			<div id="question" >		
+			</div>
+			<div class="answer" onclick="kiemtra(this)">			
+			</div>
+			<div class="answer" onclick="kiemtra(this)">			
+			</div>
+			<div class="answer" onclick="kiemtra(this)">	
+				
+			</div>
+
+		<button onclick="changestuff()"> Display change </button>
+
+			
+
+			
+
+
+		</div>
+		<script>
+
+			var quiz = [
+
+			{
+				question : "Frage 1: How many states does Germany have ?",
+				answerList : [
+				{
+					answer : "A: 13."
+				},
+				{
+					answer : "B: 10."
+				},
+				{
+					answer : "C: 16."
+				}
+				],
+				rightAnswer : "C: 16."
+			},
+			{
+				question : "Frage 2: What are colours from Germany's flag ?",
+				answerList : [
+				{
+					answer : "A: blue-green-red"
+				},
+				{
+					answer : "B: blue-green-yellow"
+				},
+				{
+					answer : "C: black-red-yellow"
+				}
+				],
+				rightAnswer : "C: black-red-yellow"
+			},
+			{
+				question : "Frage 3: What's Germany's coat of arms ?",
+				answerList : [
+				{
+					answer : "A: Shepherd dog."
+				},
+				{
+					answer : "B: Eagle."
+				},
+				{
+					answer : "C: Sloth."
+				}
+				],
+				rightAnswer : "B: Eagle."
+			},
+			{
+				question : "Frage 4: What's Germany's largest lake ?",
+				answerList : [
+				{
+					answer : "A: Bodensee."
+				},
+				{
+					answer : "B: Stampberg."
+				},
+				{
+					answer : "C: Koenigsee."
+				}
+				],
+				rightAnswer : "A: Bodensee."
+			},
+			{
+				question : "Frage 5: What's Germany's highest mount ?",
+				answerList : [
+				{
+					answer : "A: Brocken."
+				},
+				{
+					answer : "B: Zugspitze."
+				},
+				{
+					answer : "C: Watzmann."
+				}
+				],
+				rightAnswer : "B: Zugspitze."
+			},
+			{
+				question : "Frage 6: How many times did Germany hold the World-cup ?",
+				answerList : [
+				{
+					answer : "A: infinity."
+				},
+				{
+					answer : "B: 9."
+				},
+				{
+					answer : "C: 10."
+				}
+				],
+				rightAnswer : "C: 10."
+			},
+			{
+				question : "Frage 7: What's the president of Germany ?",
+				answerList : [
+				{
+					answer : "A: Joachim Gauck."
+				},
+				{
+					answer : "B: Angela Merkel."
+				},
+				{
+					answer : "C: Arnold Schwarzenegger."
+				}
+				],
+				rightAnswer : "A: Joachim Gauck."
+			},
+
+			];
+
+
+
+			var question = 0;
+			var rightAnswerNumber = 0;
+
+			document.getElementById("question").innerHTML = quiz[0].question;
+
+
+			var answer = document.getElementsByClassName("answer");
+
+			for(var i=0; i<answer.length;i++)
+				{	answer[i].innerText = quiz[0].answerList[i].answer
+				};
+
+
+				function kiemtra(div){
+
+					if(div.innerText == quiz[question].rightAnswer){
+						// alert("hah! u right..");
+						numberCounting();
+						rightAnswerNumber++;
+
+					} else { 
+						// alert("wrong !");
+					numberCounting();
+				}
+			};
+
+			function numberCounting(){
+
+				question = question + 1;
+				// console.log(question);
+				if(question == quiz.length){
+					alert(rightAnswerNumber + 1 + "/7");
+				} else {
+						
+							// window.location.
+						document.getElementById("question").innerText = quiz[question].question;
+							for(var i =0; i<answer.length; i++){
+								answer[i].innerHTML = quiz[question].answerList[i].answer;} 
+							}
+						}	
+
+			function changestuff(){
+
+
+
+				$("#question").css("color","white");
+				$(".answer").css("color","white");
+				$("h1").html('');
+				$("h1").append("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				$("h1").append("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				$("h1").append("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				$("h1").append("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				$("h1").prepend("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				$("h1").prepend("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				$("h1").prepend("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				$("h1").prepend("<img src='kanye.jpg' width='100px' height='100px'/>" );
+				
+				$("body").css(
+					{
+						"background-image" : "url('abstract-design.jpg')",
+						"background-size" : '100% 100%'
+					}
+				);
+
+
+			}
+
+
+
+
+
+
+
+
+					</script>
+					<script src="jquery.js"></script>
+				</body>
+				</html>

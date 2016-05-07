@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+		body {box-sizing: border-box;}
+		h1{ background-color: lightblue; color: white; width: 600px; height: 60px; width: 600px; margin-left: 200px;}
+		#alles { width: 1000px; height: 800px; }
+		#question { height: 70px; width: 600px; background-color: lightblue; margin-left: 200px; margin-top: 40px;} 
+		.answer { height: 60px; width: 600px; background-color: lightblue; margin-top: 15px; margin-left: 200px; }
+		#next { height: 60px; width: 200px; background-color: lightblue; margin-top: 15px; margin-left: 200px; }
+
+
+	</style>
+
+</head>
+<body>
+	
+	<h1 style="text-align: center;"> Quiz macht Spass </h1>
+
+	<div id="alles">
+		<div id="question" >		
+		</div>
+		<div class="answer" onclick="kiemtra(this)">	
+		</div>
+		<div class="answer" onclick="kiemtra(this)">	
+		</div>
+		<div class="answer" onclick="kiemtra(this)">	
+		</div>
+		<div id="next" onclick="quizNumber()">
+			next one.
+		</div>
+
+
+
+
+
+	</div>
+	<script>
+		
+		var quiz = [
+
+		{
+			"question" : "Cau hoi 1",
+			"Answers" : [
+			{
+				"dapan" : "dap an 1"
+			},
+			{
+				"dapan" : "dap an 2"
+			},
+			{
+				"dapan" : "dap an 3"
+			}
+			],
+			"trueAnswer" : "dap an 2"
+		},
+		{
+			"question" : "Cau hoi 2",
+			"Answers" : [
+			{
+				"dapan" : "dap an 4"
+			},
+			{
+				"dapan" : "dap an 5"
+			},
+			{
+				"dapan" : "dap an 6"
+			}
+			],
+			"trueAnswer" : "dap an 4"
+		}
+
+		];
+		var cauhoi = 0;
+		document.getElementById("question").innerHTML = quiz[0].question;
+
+		var answer = document.getElementsByClassName("answer")
+		for(var i = 0; i<answer.length; i++){
+			answer[i].innerHTML = quiz[0].Answers[i].dapan;
+		};
+
+		function kiemtra(div){
+
+			if(div.innerHTML == "dap an 1" || div.innerHTML == "dap an 3"){ alert("false");}
+			else {alert("fuck yes");}
+		};
+
+		function quizNumber(){
+
+			cauhoi++;
+			document.getElementById("question").innerHTML = quiz[cauhoi].question;
+			for(var i =0; i<answer.length; i++){
+				answer[i].innerHTML = quiz[cauhoi].Answers[i].dapan;
+			}
+			
+		}
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
