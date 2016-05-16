@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		body { background-image: url("http://kaysvillebible.org/wp-content/uploads/2013/06/woodgrain-background-light.jpg"); }
+		h1 { text-align: center; font-size: 50px; margin-top: 20px; }
+		#form-content { padding-left: 200px; font-size: 20px; }
+		#name { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+		#address { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+		#phone { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+		#email { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+		#password { height: 40px; width: 350px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
+		#submit { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+		#facebook{ height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+		select {  height: 30px; width: 100px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
+		#why { font-size: 13px; }
+		a:visited { color: black; text-decoration: none;}
+		a:active { color: black; text-decoration: none; }
+		span { color: red; }
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+
+		<h1> Đăng kí tài khoản </h1>
+		<div id="form-content">
+
+			<form action="result.html" id="form-register">
+				<input name="name" placeholder="Họ và tên" id="name"></input><span class="error"></span></br>
+				<input name="address" placeholder="Địa chỉ" id="address"></input></br>
+				<input type="text" name="phone" placeholder="Số điện thoại di động" id="phone"></input><span></span></br>
+				<input type="text" name="email" placeholder="E-mail" id="email"></input><span class="error"></span></br>
+				<input name="facebook" placeholder="Facebook" id="facebook" required="required"></input><span></span></br>
+				<input name="password" placeholder="Mật khẩu" id="password" type="password"></input><span></span></br>
+
+				<label> Birthday </label></br>
+
+				<select name="date" id="dayList" onclick="popup2(this)">
+					<option> Ngày ... </option>
+					<script type="text/javascript">
+						for(var i=1; i<=31; i++){ document.write(
+							"<option value='"+i+"'>" + i + "</option>");
+					}
+				</script>
+			</select>
+			
+
+			<select name="month" id="monthList">
+				<option> Tháng ... </option>
+				<option> January</option>
+				<option> February</option>
+				<option> March</option>
+				<option> April</option>
+				<option> May</option>
+				<option> June</option>
+				<option> Juli</option>
+				<option> August</option>
+				<option> September</option>
+				<option> October</option>
+				<option> Dezember</option>
+				<option> Noverber</option>
+			</select>
+
+			<select name="year" onclick="popup(this)" id="yearList">
+				<option> Năm ...</option>		
+				<script type="text/javascript">				
+					for(var i=2000; i>=1920;i--){ document.write(
+						"<option value='"+i+"'>" + i + "</option>");
+				}
+			</script>
+		</select>
+
+
+		<a href="#" onclick="fuckyou()" id="why"> Tại sao cần điền ?
+			<script type="text/javascript">
+				function fuckyou(){
+					alert("becaus FUCK YOU dat why ");
+				}
+			</script>
+		</a>
+	</br>
+
+	<input type="radio" name="gender" id="male" value="nam" required="required"></input> <label for="male"> Nam </label> 
+	<input type="radio" name="gender" id="female" value="nữ" required="required"></input> <label for="female"> Nữ </label> 
+	<span></span></br>
+
+	<input name="submit" type="submit" value="Đăng kí" id="submit"></input>
+
+</form>
+</div>
+
+
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	
+	$('#form-register').on('submit',function(){
+
+		var valid = true;
+
+
+		if($('#name').val().trim() !== ''){
+			$('#name').next('span').text('');
+			valid;
+		} 	else { $('#name').next('span').text('empty name sir');
+			valid = false;
+		}
+
+		if($('#email').val().match(/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.(([0-9]{1,3})|([a-zA-Z]{2,3})|(aero|coop|info|museum|name))$/) !== null ){
+			$('#email').next('span').text('');
+			valid;
+		} 	else { $('#email').next('span').text('invalid email');
+			valid = false;
+		}
+
+		if($('#phone').val().match(/^[0]{1}[19]{1}[0-9]{8,9}$/) ){
+			$('#phone').next('span').text('');
+			valid;
+		} else { $('#phone').next('span').text('invalid phone number');
+			valid = false; 
+		}
+
+		if($('#password').val().match(/^.{4,8}$/) ){
+			$('#password').next('span').text('');
+			valid;
+		} else { $('#password').next('span').text(' invalid password: 4 - 8 characters allowed');
+			valid = false;
+		}
+
+		// if($('[name="gender"]')is(':checked')){
+		// 	$('[name="gender"]').next('span').text('');
+		// 	valid;
+		// } else { $('[name="gender"]').next('span').text(' invalid');
+		// 	valid = false;
+		// }
+
+
+		return valid;
+	});
+
+</script>
+</body>
+</html>
