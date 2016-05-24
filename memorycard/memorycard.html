@@ -134,52 +134,7 @@
 		</div>
 	</div>
 
-	<script>
-		
-		var stt = 0;
-		var image = [
-
-			{ imageList: [ {"Kanye.jpg"},{"dota.jpg"};]
-		},
-			{ imageList: [ {"grumpy.jpg"},{"dota.jpg"};]
-		},
-			{ imageList: [ {"kidrock.jpg"},{"dota.jpg"};]
-		},
-			{ imageList: [ {"duonguv.jpg"},{"dota.jpg"};]
-		},
-			{ imageList: [ {"lyn.jpg"},{"dota.jpg"};]
-		},
-			{ imageList: [ {"simon.jpg"},{"dota.jpg"};]
-		},
-			{ imageList: [ {"conan.jpg"},{"dota.jpg"};]
-		},
-			{ imageList: [ {"ny.jpg"},{"dota.jpg"};]
-		},
-		];
-
-		function duntknow(stt){
-
-			for(var i =0; i< image.length; i++){
-				image[stt].imageList = shuffle(image[stt].imageList)
-			}
-		};
-		function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-
-    while (0 !== currentIndex) {
-
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
-
-	</script>
+	<
 
 
 	<script src="jquery.js"></script>
@@ -188,10 +143,13 @@
 		$('.card').click(function () {
 
 			$(this).toggleClass('active')
+			// this. click allows individual target dat clicked
+			//  (...) click allows all the selector (...) dat clicked
 		});
 
 
-	</script>
+
+</script>
 
 </body>
 </html>

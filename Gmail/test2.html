@@ -1,80 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link href="jquery.bxslider.css" rel="stylesheet" />
-	<style type="text/css">
-
-		.abteilung a { font-size: 25px;}
-		
-		
-
-	}
-	header a { font-size:20px; }
-	.smalldes { color: grey; }
-
-
-	.top-post { padding-top: 50px;
-		padding-right: 40px;
-		padding-left: 40px;
-	}
-	.more { padding-top: 10px; }
-
+	<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
+	<link href="jquery.bxslider.css" rel="stylesheet"/>
 	
-	#topbar { height: 40px; width: 100%; position: fixed; background-color: black; z-index: 2000; }
-	/*.button1 { height: 40px; position: absolute; right: 17%;}*/
-	/*.button2 { height: 40px; position: absolute; right: 27% } */
-	#topbar h4 { color: white; }
 
-
-
-	h1 { text-align: center; font-size: 50px; margin-top: 20px; }
-	#form-content { padding-left: 200px; font-size: 20px; }
-	#name { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-	#address { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-	#phone { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-	#email { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-	#password { height: 40px; width: 350px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
-	#submit { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-	#facebook{ height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-	select {  height: 30px; width: 100px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
-	#why { font-size: 13px; }
-	a:visited { color: black; text-decoration: none;}
-	a:active { color: black; text-decoration: none; }
-	span { color: red; }
-
-
-</style>
-
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
 	
 
 	<div id="topbar">
-		
-
-
 		<div class="container">
 			
+
+
 			<div class="pull-left">
 				<h4> Herzlich Wilkommen zu unserem Website. Subscribe kostet nur einbiss 1$ pro Woche.</h4>
 			</div>
-
 			<div class="pull-right">
-				<button type="button" class="btn btn-danger button1" data-toggle="modal" data-target="#modal1">Login</button>
-
-				<button type="button" class="btn btn-primary button2" data-toggle="modal" data-target="#modal">Subscribe</button>
-
-				
+				<button type="button" class="btn btn-danger button1 " data-toggle="modal" data-target="#modal1">Login</button>
+				<button type="button" class="btn btn-primary button2 " data-toggle="modal" data-target="#modal">Subscribe</button>		
 			</div>
-		</div>
-
-
-		
+		</div>		
 	</div>
 
 
@@ -84,9 +36,8 @@
 
 		</div>
 
-
-
 		<img src="berlin.jpg" class="berlin img-responsive">
+
 		<nav class="navbar navbar-default navi">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -102,8 +53,6 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="abteilung active"><a href="#">Deustch Abteilung <span class="sr-only">(current)</span></a></li>
-
-
 
 						<li class="dropdown">
 
@@ -175,31 +124,31 @@
 		</nav>
 	</header>
 
-
-
 	<section class="container" >
+		<div>
+			<button type="button" class="btn btn-primary button3 " data-toggle="modal" data-target="#modal">Subscribe</button>
+			<button type="button" class="btn btn-danger button4 " data-toggle="modal" data-target="#modal1">Login</button>
 
-
-		<ul class="bxslider">
-			<li><img src="dresden.jpg" /></li>
-			<li><img src="marien.jpg" /></li>
-			<li><img src="berlin1.jpg" /></li>
-		</ul>
+		</div>
+		<div class="row slidy">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<ul class="bxslider">
+					<li><img src="koln.jpg" /></li>
+					<li><img src="dresden.jpg" /></li>
+					<li><img src="berlin1.jpg" /></li>
+				</ul>
+			</div>
+		</div>
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6">
-				<span class="smalldes">
-					Giới thiệu chung - Allgemeine infomationen
-				</span>
-				<div class="top-post">
-
-
-
-
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<div class="top-post" >
+					<span class="smalldes">
+						Giới thiệu chung - Allgemeine infomationen
+					</span>
 					<h1>
 						Trường Đại học Hà Nội - Khoa tiếng Đức
 					</h1>
-
 					<p href="#">
 						Ngay từ những năm 50 của thế kỷ trước tiếng Đức đã được dạy và học ở Việt Nam. Lúc đó hàng năm Cộng hoà Dân chủ Đức nhận trên dưới 150 sinh viên và nghiên cứu sinh Việt Nam sang học tập và bồi dưỡng chuyên môn. Để trang bị cho số sinh viên này một lượng kiến thức cơ bản về tiếng Đức trước khi sang CHDC Đức thì Khoa tiếng Đức, Trường Đại học Ngoại ngữ Hà Nội (nay là Trường Đại học Hà Nội) đã được Thủ tướng Chính phủ nước Việt Nam Dân chủ Cộng hoà nay là nước Cộng hoà Xã hội Chủ nghĩa Việt Nam quyết định thành lập vào năm 1967 và tồn tại là cơ sở đào tạo tiếng Đức duy nhất của cả nước đến giữa những năm 90 của thế kỷ 20 với những nhiệm vụ chính.
 					</br>
@@ -209,74 +158,213 @@
 						</span>
 					</div>
 				</p>
-
-			</div>
+			</div>		
 		</div>
 
-		<div class="col-xs-12 col-sm-12 col-md-6">
+
+		<div class="col-xs-12 col-sm-6 col-md-6">
 			<div class="top-post">
-				<h1> Hanoi Universitat - Deustch Abteilung </h1>
+				<h1 style="padding-top: 18px;">
+					Hanoi Uni. - Abteilung fur Deutsche Sprache
+				</h1>
 				<p>
-					Unsere Entwicklung
-
-					Bereits in den 50er Jahren des letzten Jahrhunderts wurde in Vietnam Deutsch gelehrt und gelernt. Aufgrund der großen Anzahl vietnamesischer Studentinnen und Studenten, die zum Studium in die ehemalige DDR delegiert wurden - bis zu 150 Stipendiaten jährlich - wurde 1967 an der Hochschule für Fremdsprachen Ha Noi, heute Universität Ha Noi, die erste und bis Anfang der 90er Jahre einzigste Deutschabteilung des Landes gegründet. Unsere Aufgabe bestand darin, die Stipendiatinnen und Stipendiaten in Intensivkursen auf ein Studium an deutschen Hochschulen und Universitäten vorzubereiten.</br>
-
-					Insgesamt haben in diesem Rahmen etwa</br>
-
-					· 5500 Studentinnen und Studenten</br>
-					· 1000 Doktorandinnen und Doktoranden</br>
-					· 600 Dolmetscherinnen und Dolmetscher sowie Übersetzerinnen und Übersetzer</br>
-					· und zahlreiche Fachkräfte</br>
-
-					die Ausbildung an unserer Abteilung durchlaufen.
+					Unsere Entwicklung.</br>
+					Bereits in den 50er Jahren des letzten Jahrhunderts wurde in Vietnam Deutsch gelehrt und gelernt. Aufgrund der großen Anzahl vietnamesischer Studentinnen und Studenten, die zum Studium in die ehemalige DDR delegiert wurden - bis zu 150 Stipendiaten jährlich - wurde 1967 an der Hochschule für Fremdsprachen Ha Noi, heute Universität Ha Noi, die erste und bis Anfang der 90er Jahre einzigste Deutschabteilung des Landes gegründet. Unsere Aufgabe bestand darin, die Stipendiatinnen und Stipendiaten in Intensiv - kursen auf ein Studium an deutschen Hochschulen und Universitäten vorzubereiten. 
 				</p>
 			</div>
 		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="middle-post">
+				<span class="smalldes">
+					Đội ngũ giảng viên - Lehrkraefte 
+				</span>
+				<div class="row2img">
+					<img src="coHanh.jpg" class="img-thumbnail">
+				</div>
+				<a href="#"><h3> Tập thể cán bộ giáo viên đang công tác tại khoa</h3></a>
+			</br>
+			<h4> Ban chủ nhiệm khoa: </h4>
+			<p id="lefttext"><b>Trưởng khoa:</b>
+			</br>
+			Bà Đặng Thị Thu Hiền (Tiến sĩ)</br> 
+			Email: dt65_hien@yahoo.de</br>
+			DĐ: 0169 8200 975</br></p>
+
+			<p id="righttext"><b>Phó trưởng khoa:</b></br>
+				Bà Nguyễn Thị Kim Liên (Thạc sĩ)</br>
+				Email: lienntk@hanu.edu.vn</br>
+				DĐ: 0983 353 560
+			</p>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-6">
+		<div class="middle-post">
+			<span class="smalldes lilshit">
+				Hợp tác đối ngoại - Inter. Kooperation
+			</span>
+			<div class="row2img">
+				<img src="flage.jpg" class="img-thumbnail">
+			</div>
+			<a href="#"><h3> Hợp tác đối ngoại - Internationale Kooperation</h3></a>
+		</br>
+		<p>Ngày 07.04, theo chỉ đạo của BQL đề án NNQG 2020, trường ĐH Hà Nội phối hợp với Khoa Tiếng Đức tổ chức hội thảo xây dựng chương trình khung Tiếng Đức là ngoại ngữ 2 tại các trường phổ thông VN. Tham gia buổi khai mạc có đại diện Bộ GD và ĐT, BQL đề án NNQG 2020, BGH ĐH Hà Nôi,BGH ĐHQG Hà Nội, ĐSQ CHLB Đức tại Việt Nam, viện Goethe, tổ chức ZFA và đại diện một số trường PT dạy tiếng Đức tại HN.</p>
 
 	</div>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-6">
+		<div class="middle-post">
+			<span class="smalldes">
+				Tin tức chung - Information
+			</span>
+			<div class="row2img">
+				<img src="news.gif" class="img-thumbnail">
+			</div>
+			<a href="#"><h3> Về việc kiểm tra tài chính để chuẩn bị xét tốt nghiệp</h3></a>
+		</br>
+		<p>
+			Để chuẩn bị cho việc xét tốt nghiệp SV chính quy K. 2012 P. TC-KT đề nghị sinh viên thuộc Khóa 2012, (SV Khoa Chuyên ngành: DL, QTKD, CNTT, Kế toán, TCNH, Quốc tế học các khóa 2011 trở về trước) kiểm tra nghĩa vụ tài chính của mình trên trang cá nhân về học phí nếu thấy các khoản tài chính như: học phí, bảo hiểm y tế, Tiền KTX còn thiếu cần xuống ngay P. 106 Nhà A gặp Đ/c Mạnh để kịp thời kiểm tra và chỉnh sửa (Nếu có sai sót), Hoàn thiện học phí (Nếu còn thiếu).</br>
+		</p>
+	</div>	
+</div>
+
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+	<div class="middle-post">
+		<span class="smalldes">
+			Điểm thi - Prufungsergebnisse
+		</span>
+		<div class="row2img" >
+			<img src="score.jpg" class="img-thumbnail">
+		</div>
+		<a href="#"><h3> Điểm thi </h3></a>
+	</br>
 	
+	<p id="lefttext">
+		<b>Khóa 2012-2016</b> </br>
 
-	<div class="row">
-		<div class="top-post col-xs-12 col-sm-12 col-md-6">
-			<div class="row2img">
-				<img src="cowboykent.jpg" class="img-responsive">
-			</div>
-		</div>
-		<div class="top-post col-xs-12 col-sm-12 col-md-6">
-			<div class="row2img">
-				<img src="fahne.png" class="img-responsive">
-			</div>
-		</div>
-	</div>
+		<b>Khóa 2013-2017 </b> </br>
+		<b>Khóa 2014-2018</b></br>
+		<b>Khoá 2015-2019 </b></br>
+		<b> Ngoại ngữ 2 </b></br>
+		<b>Các khóa đã tốt nghiệp</b>
+	</p>
 
-	<div class="row">
-		<div class="top-post col-xs-12 col-sm-12 col-md-6">
+	<p id="righttext">
+
+		Tổng hợp điểm năm học 2015-2016 K12</br>
+		Tổng hợp điểm năm học 2015-2016 K13</br>
+		Tổng hợp điểm năm học 2015-2016 K14</br>
+		Tổng hợp điểm năm học 2015-2016 K15</br>
+		Điểm xét học bổng khóa 2013 kì 4 </br>
+
+	</p>
+</div>	
+</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-6">
+		<div class="middle-post">
+			<span class="smalldes">
+				Hoạt động sinh viên - Studentische Aktivitaten 
+			</span>
 			<div class="row2img">
-				<img src="lehrer.jpg" class="img-responsive">
-			</div>
+				<img src="performance.jpg" class="img-thumbnail">
+			</div >
+			<a href="#"><h3> Hoạt động sinh viên </h3></a>
+		</br>
+		<p id="lefttext">
+			Hội sinh viên </br>
+			Hoạt động Đoàn </br>
+			Hội sinh viên </br>
+			CLB tiếng Đức </br>
+			Cựu sinh viên </br>
+			Thư viện ảnh </br>
+			
+		</p>
+		<p id="righttext">	
+			GREEN EXCHANGE 2014 </br>
+			Karaoke-Wettbewerb </br>
+			CLB tiếng Đức tại trung tâm Việt Đức (VDZ) </br>
+			Facebook Hội sinh viên </br>
+			Diễn đàn chung
+
+		</p>
+	</div>	
+</div>
+
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+	<div class="middle-post">
+		<span class="smalldes">
+			Thi OSD - OSD Prufung
+		</span>
+		<div class="row2img">
+			<img src="osd.jpg" class="img-thumbnail">
 		</div>
-		<div class="top-post col-xs-12 col-sm-12 col-md-6">
-			<div class="row2img">
-				<img src="performance.jpg" class="img-responsive">
-			</div>
-		</div>
-	</div>
+		<a href="#"><h3> Thi OSD </h3></a>
+	</br>
+	<p> Das ÖSD ist ein staatlich anerkanntes Prüfungssystem für Deutsch als Fremd- und 	Zweitsprache. </br>
+		Die ÖSD-Prüfungen orientieren sich an den Niveaubeschreibungen des „Gemeinsamen europäischen Referenzrahmens für Sprachen“. Eine Kurzbeschreibung finden Sie auf unseren Seiten in der Rubrik F.A.Q.
+	</p>
+	
+</div>	
+</div>
+</div>
+<div style="height: 150px;">
+</div>
+
 
 </section>
+<div id="foot">
 
+	<footer class="container">
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<div class="lowertext">
+					<h1> Khoa Đức - Đại Học Hà Nội </h1> 
+					<img src="cat.jpg">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<div class="lowertext">
+
+
+				</div>
+			</div>
+		</div>
+
+		 <!-- <p> contact us throu Media </p>
+		<img src="dota.png" width="100px" height="100px">
+		<img src="steam.svg" width="100px" height="100px">
+		<img src="in.png" width="100px" height="100px">
+		<img src="gg.png" width="100px" height="100px">
+		<img src="fb.png" width="100px" height="100px">
+		<img src="twitter.png" width="100px" height="100px"> -->
+		
+
+		
+	</footer>
+</div>
 
 
 <div class="modal fade" tabindex="-1" id="modal" role="dialog" aria-labelledby="myLargeModalLabel">
 	<div class="modal-dialog">
-
-		<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<h4 class="modal-title"> Subscribe form</h4>
 			</div>
 			<div class="modal-body">
-				
+
 				<form action="result.html" id="form-register">
 					<input name="name" placeholder="Họ và tên" id="name"></input><span class="error"></span></br>
 					<input name="address" placeholder="Địa chỉ" id="address"></input></br>
@@ -295,8 +383,6 @@
 						}
 					</script>
 				</select>
-
-
 				<select name="month" id="monthList">
 					<option> Tháng ... </option>
 					<option> January</option>
@@ -321,8 +407,6 @@
 					}
 				</script>
 			</select>
-
-
 			<a href="#" onclick="fuckyou()" id="why"> Tại sao cần điền ?
 				<script type="text/javascript">
 					function fuckyou(){
@@ -331,25 +415,18 @@
 				</script>
 			</a>
 		</br>
-
 		<input type="radio" name="gender" id="male" value="nam" required="required"></input> <label for="male"> Nam </label> 
 		<input type="radio" name="gender" id="female" value="nữ" required="required"></input> <label for="female"> Nữ </label> 
 		<span></span></br>
-
 		<input name="submit" type="submit" value="Đăng kí" id="submit"></input>
-
 	</form>
-
 </div>
 <div class="modal-footer">
 	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
 </div>
-
 </div>
 </div>
-
-
 <div class="modal fade" tabindex="-1" id="modal1" role="dialog" aria-labelledby="myLargeModalLabel">
 	<div class="modal-dialog">
 
@@ -360,11 +437,9 @@
 				<h4 class="modal-title"> Login form</h4>
 			</div>
 			<div class="modal-body">
-
 				<input name="facebook" placeholder="Facebook" id="facebook" required="required"></input><span></span></br>
 				<input name="password" placeholder="Mật khẩu" id="password" type="password"></input><span></span></br>
 				<input name="submit" type="submit" value="Đăng nhập" id="submit"></input>
-
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -377,74 +452,27 @@
 
 
 <script type="text/javascript" src="jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
 <script src="jquery.bxslider.min.js"></script>
-
-<script type="text/javascript">
-	
-	$('#form-register').on('submit',function(){
-
-		var valid = true;
-
-
-		if($('#name').val().trim() !== ''){
-			$('#name').next('span').text('');
-			valid;
-		} 	else { $('#name').next('span').text('empty name sir');
-		valid = false;
-	}
-
-	if($('#email').val().match(/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.(([0-9]{1,3})|([a-zA-Z]{2,3})|(aero|coop|info|museum|name))$/) !== null ){
-		$('#email').next('span').text('');
-		valid;
-	} 	else { $('#email').next('span').text('invalid email');
-	valid = false;
-}
-
-if($('#phone').val().match(/^[0]{1}[19]{1}[0-9]{8,9}$/) ){
-	$('#phone').next('span').text('');
-	valid;
-} else { $('#phone').next('span').text('invalid phone number');
-valid = false; 
-}
-
-if($('#password').val().match(/^.{4,8}$/) ){
-	$('#password').next('span').text('');
-	valid;
-} else { $('#password').next('span').text(' invalid password: 4 - 8 characters allowed');
-valid = false;
-}
-
-
-
-return valid;
-});
-
-</script>
-
-
+<script src="script.js"></script>
 <script>
+	
 	max = 0;
-
-
 	var a 	= $(".row2img > img");
 
 	$(window).on('load',function(){
 		balance(a);
 	});
-
 	function balance(x){
 
 		x.each(function(){
 			if($(this)[0].height > max){
 				max = $(this)[0].height;
 			}
- 		// console.log($(this)[0].height);
- 	});
+		});
 		x.height(max);
 
 	}
-
 	$(document).ready(function(){
 		$('.bxslider').bxSlider();
 	});
@@ -452,7 +480,6 @@ return valid;
 		adaptiveHeight: true,
 		mode: 'fade'
 	});
-
 
 </script>
 </body>

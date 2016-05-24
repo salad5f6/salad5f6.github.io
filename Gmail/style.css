@@ -1,0 +1,122 @@
+<style type="text/css">
+
+.abteilung a { font-size: 25px;}
+
+
+
+}
+header a { font-size:25px; }
+.smalldes { color: grey; }
+
+
+
+.more { padding-top: 10px; }
+
+
+#topbar { height: 40px; width: 100%; position: fixed; background-color: black; z-index: 2000; }
+
+#topbar h4 { color: white; }
+
+
+h1 { text-align: center; font-size: 50px; margin-top: 20px; padding-bottom: 25px; }
+#form-content { padding-left: 200px; font-size: 20px; }
+#name { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+#address { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+#phone { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+#email { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+#password { height: 40px; width: 350px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
+#submit { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+#facebook{ height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
+select {  height: 30px; width: 100px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
+#why { font-size: 13px; }
+a:visited { color: black; text-decoration: none;}
+a:active { color: black; text-decoration: none; }
+span { color: red; }
+
+
+.dropdown { padding-right:  5px; 
+
+}
+header a { font-size:20px; }
+.smalldes { color:grey; }
+
+.top-post { padding: 60px;
+}
+.middle-post { padding-top: 70px;
+	padding-right: 60px;
+	padding-left: 60px;
+}
+
+.middle-post a:hover { text-decoration: none;  }
+#lefttext { float: left; }
+#righttext { float: right; }
+.more { padding-top: 10px; }
+
+.row2img { overflow: hidden; margin-top: 50px;}
+.row2img img { transition: all 3s ease; }
+.row2img:hover img { transform: scale(1.2);opacity: 0.8;}
+.button3, .button4 { display: none; }
+#foot { background-image: url("http://www.freelargeimages.com/wp-content/uploads/2014/12/Black_background.jpg"); }
+#foot { height: 150px; width: 100%; }
+#foot img { height: 50px; width: 50px; }
+.lowertext { padding:60px; padding-bottom: 0; padding-top: 10px;}
+.lowertext h1 { font-size: 25px; color: white; }
+.lowertext img { width: 50px; height: 50px; margin-left: 70px; }
+
+
+@media only screen and (max-width: 500px){
+	.pull-left h4 { 
+		font-size: 7px;
+	}
+	.slidy { display: none; }
+	.button1, .button2 {
+		display: none;
+	}
+	.button3, .button4 { display: block; width: 100%; height: 20px; font-size: 7px; }
+	
+
+	.top-post h1 { font-size: 25px; !important }
+
+	.top-post { padding: 30px; padding-bottom: 10px;
+	}
+	.middle-post { padding-top: 20px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	#foot img { height: 30px; width: 30px; }
+	#foot { height: 100px; width: 100%; }
+	.lowertext { padding: 30px; padding-bottom: 0; padding-top: 2px;}
+	.lowertext h1 { font-size: 13px; color: white; }
+	.lowertext img { display: none; }
+}
+
+@media only screen and (max-width: 1000px){
+	.pull-left h4 { 
+		font-size: 13px;
+	}
+	.slidy { display: none; }
+	.button1, .button2 {
+		display: none;
+	}
+	.button3, .button4 { display: block; width: 100%; height: 20px; font-size: 7px; }
+	
+
+	.top-post h1 { font-size: 25px; !important }
+
+	.top-post { padding: 30px; padding-bottom: 10px;
+	}
+	.middle-post { padding-top: 20px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	#foot img { height: 30px; width: 30px; }
+	#foot { height: 100px; width: 100%; }
+	.lowertext { padding: 30px; padding-bottom: 0; padding-top: 2px;}
+	.lowertext h1 { font-size: 13px; color: white; }
+	.lowertext img { display: none; }
+}
+
+
+
+
+</style>
