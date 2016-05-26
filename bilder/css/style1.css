@@ -7,39 +7,36 @@
 
 
 body { background-image: url(http://www.myfreetextures.com/wp-content/uploads/2011/06/brushedsteel4.jpg); }
-
+/*
 #banner { width: 100%;
 	border: 1px solid;
-	height: 300px;	
+	height: 300px;*/	
 }
-.inhalt { float: left;
+/*.inhalt { float: left;
 	width: 365px;
 	height: 365px;
 	padding: 5px;
 	margin: 10px;
 }
-.inhalt:hover { 
-	border-radius: 150%; }
-	.wrap { max-width: 1800px;
-		margin: auto; 
+*/
 
-	}
-	#title { 
-		background-color: lightblue;
-		border: 2px solid;
-		font-size: 80px;
-		text-align: center;
-		text-decoration: underline;
-		margin-top: 0;
-		margin-bottom: 5px;
-	}
-	.menu { float: left;
-		width: 25%;
-		height: 100px;
-		font-size: 30px;
-		text-align: center;
-	}
-	
+}
+#title { 
+	background-color: lightblue;
+	border: 2px solid;
+	font-size: 80px;
+	text-align: center;
+	text-decoration: underline;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.menu { float: left;
+	width: 25%;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+}
+
 }
 #avatar { 	border-radius: 20%;
 
@@ -76,6 +73,6 @@ body { background-image: url(http://www.myfreetextures.com/wp-content/uploads/20
 	#menu-vertical a { border: 1px solid }
 
 	#angebot { position: absolute;
-}
+	}
 	#menu { position: relative; }
 
