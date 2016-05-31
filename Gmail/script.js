@@ -1,23 +1,23 @@
 
 
 // code cho forrm	
-	$('#form-register').on('submit',function(){
+$('#form-register').on('submit',function(){
 
-		var valid = true;
+	var valid = true;
 
 
-		if($('#name').val().trim() !== ''){
-			$('#name').next('span').text('');
-			valid;
-		} 	else { $('#name').next('span').text('empty name sir');
-		valid = false;
-	}
-
-	if($('#email').val().match(/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.(([0-9]{1,3})|([a-zA-Z]{2,3})|(aero|coop|info|museum|name))$/) !== null ){
-		$('#email').next('span').text('');
+	if($('#name').val().trim() !== ''){
+		$('#name').next('span').text('');
 		valid;
-	} 	else { $('#email').next('span').text('invalid email');
+	} 	else { $('#name').next('span').text('empty name sir');
 	valid = false;
+}
+
+if($('#email').val().match(/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.(([0-9]{1,3})|([a-zA-Z]{2,3})|(aero|coop|info|museum|name))$/) !== null ){
+	$('#email').next('span').text('');
+	valid;
+} 	else { $('#email').next('span').text('invalid email');
+valid = false;
 }
 
 if($('#phone').val().match(/^[0]{1}[19]{1}[0-9]{8,9}$/) ){
@@ -36,6 +36,5 @@ valid = false;
 return valid;
 });
 // done
-
 
 
