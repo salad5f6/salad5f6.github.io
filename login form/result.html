@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+		body { background-image: url("http://kaysvillebible.org/wp-content/uploads/2013/06/woodgrain-background-light.jpg"); }
+		h1 { text-align: center; margin-top: 50px; font-size: 40px;}
+
+	</style>
+</head>
+<body>
+
+	<h1> Đăng nhập thành công </h1>
+	<BUTTON id="button"> click me bitch </BUTTON></br>
+
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+
+
+var QueryString = function () {
+  // This function is anonymous, is executed immediately and 
+  // the return value is assigned to QueryString!
+  var query_string = {};
+  var query = window.location.search.substring(1);
+  console.log(query);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+  	var pair = vars[i].split("=");
+        // If first entry with this name
+        console.log(query_string[pair[0]]);
+        if (typeof query_string[pair[0]] === "undefined") {
+        	query_string[pair[0]] = decodeURIComponent(pair[1]);
+        // If second entry with this name
+    } else if (typeof query_string[pair[0]] === "string") {
+    	var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+    	query_string[pair[0]] = arr;
+        // If third or later entry with this name
+    } else {
+    	query_string[pair[0]].push(decodeURIComponent(pair[1]));
+    }
+} 
+return query_string;
+};	//coppy nhe
+document.write( " name: "+ QueryString().user + "<br/>") 
+document.write("password: " + QueryString().password + "<br/>")
+
+document.write( "date: "+ QueryString().day + "<br/>")
+document.write("month: "+ QueryString().month + "<br/>")
+document.write("year: "+ QueryString().year + "<br/>")
+document.write("gender: "+ QueryString().radio + "<br/>")
+document.write("email: "+ QueryString().email + "<br/>")
+
+
+
+</script>
+
+
+</body>
+</html>

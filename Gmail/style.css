@@ -20,14 +20,14 @@ header a { font-size:25px; }
 
 h1 { text-align: center; font-size: 50px; margin-top: 20px; padding-bottom: 25px; }
 #form-content { padding-left: 200px; font-size: 20px; }
-#name { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-#address { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-#phone { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-#email { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-#password { height: 40px; width: 350px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
-#submit { height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-#facebook{ height: 40px; width: 350px; font-size: 17px; margin-top: 10px; }
-select {  height: 30px; width: 100px; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
+#name { height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
+#address { height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
+#phone { height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
+#email { height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
+#password { height: 40px; width: 80%; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
+#submit { height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
+#facebook{ height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
+select {  height: 30px; width: 80%; font-size: 17px; margin-top: 10px;     margin-bottom: 7px; }
 #why { font-size: 13px; }
 a:visited { color: black; text-decoration: none;}
 a:active { color: black; text-decoration: none; }
@@ -66,7 +66,10 @@ header a { font-size:20px; }
 .lowertext h1 { font-size: 25px; color: white; }
 .lowertext img { width: 50px; height: 50px; margin-left: 70px; }
 
-
+	.slidy {
+    margin-right: -15px;
+    margin-left: 0px;
+}
 
 @media only screen and (max-width: 500px){
 	.pull-left h4 { 
@@ -152,9 +155,11 @@ header a { font-size:20px; }
 	 }
 	
 	.midbody { height: 10px; width: 100%; background-color: black;}
-	.lowerbody { width: 100%; background-image: url("wood.jpg"); box-shadow: 0 0px 17px 0 }
+	.lowerbody { width: 100%; background-image: url('download.jpg'); box-shadow: 0 0px 17px 0 }
 
-
+	.headone {
+    padding-right: 0;
+    padding-left: 0; }
 
 	.grid-item {   background-color: white;
 		box-shadow: 0 5px 5px 0;
