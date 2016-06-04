@@ -9,7 +9,7 @@
 		table { margin: 100px; }
 		table, td, th {border: 3px solid;}
 		td, th { padding-top: 17px; 
-			padding-left: 17px; width: 20%; }
+			padding-left: 17px; width: 20%; text-align: center; padding: 5px;}
 			table { border-collapse: collapse; }	
 			th.headerSortUp { 
 				background-image: url(asc.gif); 
@@ -33,6 +33,7 @@
 			.img { line-height: 0; padding: 5px; }
 
 			tr:hover{ background-color: #78BB7B; }
+			#top { font-size: 25px; padding-bottom: 10px; background-color: #DA4141;;}
 
 
 
@@ -42,6 +43,9 @@
 	<body>
 		<table id="myTable" class="tablesorter"> 
 			<thead> 
+				<tr>
+					<th colspan="5" id="top"> Danh sách học viên lớp HTML5 </th>
+				</tr>
 				<tr> 
 					<th>Ảnh chân dung</th> 
 					<th>Tên học viên</th> 
