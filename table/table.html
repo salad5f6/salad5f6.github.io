@@ -11,31 +11,15 @@
 		td, th { padding-top: 17px; 
 			padding-left: 17px; width: 20%; text-align: center; padding: 5px;}
 			table { border-collapse: collapse; }	
-			th.headerSortUp { 
-				background-image: url(asc.gif); 
-				background-color: #3399FF; 
-			} 		
-			th.headerSortDown { 
-				background-image: url(desc.gif); 
-				background-color: #3399FF; 
-			} 
-			th.header { 
-				background-image: url(bg.gif); 
-				cursor: pointer; 
-				font-weight: bold; 
-				background-repeat: no-repeat; 
-				background-position: center left; 
-				padding-left: 20px; 
-				border-right: 1px solid #dad9c7; 
-				margin-left: -1px; 
-			} 
+			
 			.img img { width: 100%;  }
 			.img { line-height: 0; padding: 5px; }
 
 			tr:hover{ background-color: #78BB7B; }
 			#top { font-size: 25px; padding-bottom: 10px; background-color: #DA4141;;}
+			
 
-
+			
 
 		</style>
 
@@ -47,11 +31,11 @@
 					<th colspan="5" id="top"> Danh sách học viên lớp HTML5 </th>
 				</tr>
 				<tr> 
-					<th>Ảnh chân dung</th> 
-					<th>Tên học viên</th> 
-					<th>Email</th> 
-					<th>Giới tính</th> 
-					<th>Số điện thoại</th> 
+					<th class="title">Ảnh chân dung</th> 
+					<th class="title">Tên học viên<img src="arrow.png" width="10px" height="10px" class="arrow"></th> 
+					<th class="title">Email<img src="arrow.png" width="10px" height="10px" class="arrow"></th> 
+					<th class="title">Giới tính<img src="arrow.png" width="10px" height="10px" class="arrow"></th> 
+					<th class="title">Số điện thoại<img src="arrow.png" width="10px" height="10px" class="arrow"></th> 
 				</tr> 
 			</thead> 
 			<tbody> 
@@ -104,7 +88,7 @@
 			} 
 			); 
 
-
+			
 
 		</script>
 
