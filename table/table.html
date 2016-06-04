@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+
+		body { width: 1200px; margin: auto; background-image: url('http://mixhdwallpapers.com/wp-content/uploads/2014/04/129.jpg');}
+
+		table { margin: 100px; }
+		table, td, th {border: 3px solid;}
+		td, th { padding-top: 17px; 
+			padding-left: 17px; width: 20%; }
+			table { border-collapse: collapse; }	
+			th.headerSortUp { 
+				background-image: url(asc.gif); 
+				background-color: #3399FF; 
+			} 		
+			th.headerSortDown { 
+				background-image: url(desc.gif); 
+				background-color: #3399FF; 
+			} 
+			th.header { 
+				background-image: url(bg.gif); 
+				cursor: pointer; 
+				font-weight: bold; 
+				background-repeat: no-repeat; 
+				background-position: center left; 
+				padding-left: 20px; 
+				border-right: 1px solid #dad9c7; 
+				margin-left: -1px; 
+			} 
+			.img img { width: 100%;  }
+			.img { line-height: 0; padding: 5px; }
+
+			tr:hover{ background-color: #78BB7B; }
+
+
+
+		</style>
+
+	</head>
+	<body>
+		<table id="myTable" class="tablesorter"> 
+			<thead> 
+				<tr> 
+					<th>Ảnh chân dung</th> 
+					<th>Tên học viên</th> 
+					<th>Email</th> 
+					<th>Giới tính</th> 
+					<th>Số điện thoại</th> 
+				</tr> 
+			</thead> 
+			<tbody> 
+				<tr> 
+					<td class="img"><img src="japeody.jpg" class="img-responsive"></td> 
+					<td> Jarpeody </td> 
+					<td><a href="#"> jsmith@gmail.com</a></td> 
+					<td>male</td> 
+					<td>0145789456</td> 
+				</tr> 
+				<tr> 
+					<td class="img"><img src="kanye.jpg" class="img-responsive"></td> 
+					<td>Kanye West </td> 
+					<td><a href="#">fbach@yahoo.com</a></td> 
+					<td>female</td> 
+					<td>0354896555</td> 
+				</tr> 
+				<tr> 
+					<td class="img"><img src="lotto.jpg" class="img-responsive"></td> 
+					<td>Lotto</td> 
+					<td><a href="#">jdoe@hotmail.com</a></td> 
+					<td>female</td> 
+					<td>0684357135</td> 
+				</tr> 
+				<tr> 
+					<td class="img"><img src="tom.jpg" class="img-responsive"></td> 
+					<td>Tom John</td> 
+					<td><a href="#">tconway@earthlink.net</a></td> 
+					<td>male</td> 
+					<td>0125487951</td> 
+				</tr> 
+				<tr> 
+					<td class="img"><img src="zlatan.jpg" class="img-responsive"></td> 
+					<td> Zlatan </td> 
+					<td><a href="#"> mith@gmail.com</a></td> 
+					<td>male</td> 
+					<td>0145784456</td> 
+				</tr> 
+				
+
+			</tbody> 
+		</table> 
+		<script src="jquery-latest.js"></script>
+		<script src="jquery.tablesorter.js"></script>
+
+		<script>
+			$(document).ready(function() 
+			{ 
+				$("#myTable").tablesorter(); 
+			} 
+			); 
+
+
+
+		</script>
+
+	</body>
+	</html>
