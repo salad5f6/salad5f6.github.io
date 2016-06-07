@@ -155,7 +155,7 @@ header a { font-size:20px; }
 	 }
 	
 	.midbody { height: 10px; width: 100%; background-color: black;}
-	.lowerbody { width: 100%; background-image: url('download.jpg'); box-shadow: 0 0px 17px 0 }
+	.lowerbody { width: 100%; background-image: url('download.jpg'); box-shadow: 0 0px 17px 0; margin-bottom: 100px; }
 
 	.headone {
     padding-right: 0;
