@@ -18,7 +18,7 @@ header a { font-size:25px; }
 #topbar h4 { color: white; }
 
 
-h1 { text-align: center; font-size: 50px; margin-top: 20px; padding-bottom: 25px; }
+h1 { text-align: center; font-size: 35px; margin-top: 20px; padding-bottom: 25px; }
 #form-content { padding-left: 200px; font-size: 20px; }
 #name { height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
 #address { height: 40px; width: 80%; font-size: 17px; margin-top: 10px; }
@@ -32,6 +32,11 @@ select {  height: 30px; width: 80%; font-size: 17px; margin-top: 10px;     margi
 a:visited { color: black; text-decoration: none;}
 a:active { color: black; text-decoration: none; }
 span { color: red; }
+
+
+.abteilung a {
+    font-size: 27px;
+}
 
 
 .dropdown { padding-right:  5px; 
@@ -57,8 +62,12 @@ header a { font-size:20px; }
 .row2img img { transition: all 0.5s ease-out; }
 .row2img:hover img { transform: scale(1.2);}
 
+.button1, .button2 {  margin-top: 2px;
+}
+.button3, .button4 { display: none; 
+}
 
-.button3, .button4 { display: none; }
+
 #foot { background-color: #0C0B0B; }
 #foot { height: 150px; width: 100%; }
 #foot img { height: 50px; width: 50px; }
@@ -66,10 +75,17 @@ header a { font-size:20px; }
 .lowertext h1 { font-size: 25px; color: white; }
 .lowertext img { width: 50px; height: 50px; margin-left: 70px; }
 
-	.slidy {
-    margin-right: -15px;
-    margin-left: 0px;
+.slidy {
+	margin-right: -15px;
+	margin-left: 0px;
 }
+
+
+
+.top1 { padding-right: 35px; }
+.top2 { padding-left: 35px;}
+
+
 
 @media only screen and (max-width: 500px){
 	.pull-left h4 { 
@@ -95,6 +111,7 @@ header a { font-size:20px; }
 	.lowertext { padding: 30px; padding-bottom: 0; padding-top: 2px;}
 	.lowertext h1 { font-size: 13px; color: white; }
 	.lowertext img { display: none; }
+	.headone { margin-bottom: -10px; }
 }
 
 @media only screen and (max-width: 1000px){
@@ -105,8 +122,8 @@ header a { font-size:20px; }
 	.button1, .button2 {
 		display: none;
 	}
-	.button3 { display: block; width: 50%; height: 30px; font-size: 15px; float: left;}
-	.button4 { display: block; width: 50%; height: 30px; font-size: 15px; float: right;}
+	.button3 { display: block; width: 50%; height: 30px; font-size: 15px; float: left; margin-top: 7px;}
+	.button4 { display: block; width: 50%; height: 30px; font-size: 15px; float: right; margin-top: 7px;}
 
 	.top-post h1 { font-size: 25px; !important }
 
@@ -121,6 +138,7 @@ header a { font-size:20px; }
 	.lowertext { padding: 30px; padding-bottom: 0; padding-top: 2px;}
 	.lowertext h1 { font-size: 13px; color: white; }
 	.lowertext img { display: none; }
+	.headone { margin-bottom: -10px; }
 }
 
 
@@ -149,17 +167,21 @@ header a { font-size:20px; }
 			float: none;
 		}
 		.top-post h1 { font-size: 35px; }
+
 	}
 
 	#tag {  width: 100%; margin: auto; height: 50px; background-color: #E44E43;
-	 }
+	}
 	
 	.midbody { height: 10px; width: 100%; background-color: black;}
 	.lowerbody { width: 100%; background-image: url('download.jpg'); box-shadow: 0 0px 17px 0; margin-bottom: 100px; }
 
 	.headone {
-    padding-right: 0;
-    padding-left: 0; }
+		padding-right: 0;
+		padding-left: 0; }}
+		.headone { margin-bottom: -10px; }
+	
+
 
 	.grid-item {   background-color: white;
 		box-shadow: 0 5px 5px 0;
@@ -189,4 +211,4 @@ header a { font-size:20px; }
 
 		}
 
-
+		a:hover { text-decoration: none; }
