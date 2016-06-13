@@ -650,8 +650,8 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="masonry.pkgd.min.js"></script>
-
 <script src="jquery.bxslider.min.js"></script>
 <script src="script.js"></script>
 <script>
@@ -660,26 +660,32 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 	var a 	= $(".row2img > a > img");
 
 // load massonry after load
-	$(window).on('load',function(){
-		balance(a);
-		$('.grid').masonry({
-			columnWidth: '.grid-sizer',
-			itemSelector: '.grid-item',
-			gutter: '.gutter-sizer'
+$(window).on('load',function(){
+	balance(a);
+	var duong = $('.grid').masonry({
+		columnWidth: '.grid-sizer',
+		itemSelector: '.grid-item',
+		gutter: '.gutter-sizer'
 
-		});
 	});
+	duong.imagesLoaded().progress( function() {
+			$grid.masonry('layout');
+		});
+});
 
 
 	//load massonry on change
 
 	$(window).on('change',function(){
 		balance(a);
-		$('.grid').masonry({
+		var duong = $('.grid').masonry({
 			columnWidth: '.grid-sizer',
 			itemSelector: '.grid-item',
 			gutter: '.gutter-sizer'
 
+		});
+		duong.imagesLoaded().progress( function() {
+			$grid.masonry('layout');
 		});
 	});
 
