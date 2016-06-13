@@ -602,7 +602,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 			<a href="#" onclick="fuckyou()" id="why"> Tại sao cần điền ?
 				<script type="text/javascript">
 					function fuckyou(){
-						alert("becaus FUCK YOU dat why ");
+						alert("becaus FAK YOU dat why ");
 					}
 				</script>
 			</a>
@@ -630,7 +630,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 			</div>
 			<div class="modal-body">
 				<form action="result.html" id="form-register" method="get">
-					<input name="facebook" placeholder="Facebook" id="facebook" required="required"></input><span></span></br>
+					<input name="name" placeholder="Tài khoản" id="facebook" required="required"></input><span></span></br>
 					<input name="password" placeholder="Mật khẩu" id="password" type="password" required="required"></input><span></span></br>
 					<input name="submit" type="submit" value="Đăng nhập" id="submit"></input>
 				</form>
@@ -645,6 +645,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 
 
 
+
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
 <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
@@ -656,68 +657,37 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 	max = 0;
 	var a 	= $(".row2img > a > img");
 
-// load massonry after load
-// $(window).on('load',function(){
-// 	balance(a);
-// 	var duong = $('.grid').masonry({
-// 		columnWidth: '.grid-sizer',
-// 		itemSelector: '.grid-item',
-// 		gutter: '.gutter-sizer'
-
-// 	});
-// 	duong.imagesLoaded().progress( function() {
-// 			duong.masonry('layout');
-// 		});
-// });
 
 
-	
-        $(function () {
-        		balance(a);
-            var $grid = $('.grid').masonry({
-                columnWidth: '.grid-sizer',
-                gutter: '.gutter-sizer',
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                isAnimated: true
-            });
-            $grid.imagesLoaded().progress(function () {
-                $grid.masonry('layout');
-            });
-        });
+	$(function () {
+        		// balance(a);
+        		var $grid = $('.grid').masonry({
+        			columnWidth: '.grid-sizer',
+        			gutter: '.gutter-sizer',
+        			itemSelector: '.grid-item',
+        			percentPosition: true,
+        			isAnimated: true
+        		});
+        		$grid.imagesLoaded().progress(function () {
+        			$grid.masonry('layout');
+        		});
+        	});
 
-        $(window).on("resize", function () {
-        		balance(a);
-            var $grid = $('.grid').masonry({
-                columnWidth: '.grid-sizer',
-                gutter: '.gutter-sizer',
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                isAnimated: true
-            });
-            $grid.imagesLoaded().progress(function () {
-                $grid.masonry('layout');
-            });
-        });
+	$(window).on("resize", function () {
+        		// balance(a);
+        		var $grid = $('.grid').masonry({
+        			columnWidth: '.grid-sizer',
+        			gutter: '.gutter-sizer',
+        			itemSelector: '.grid-item',
+        			percentPosition: true,
+        			isAnimated: true
+        		});
+        		$grid.imagesLoaded().progress(function () {
+        			$grid.masonry('layout');
+        		});
+        	});
 
 	
-
-
-
-	//load massonry on change
-
-	// $(window).on('change',function(){
-	// 	balance(a);
-	// 	var duong = $('.grid').masonry({
-	// 		columnWidth: '.grid-sizer',
-	// 		itemSelector: '.grid-item',
-	// 		gutter: '.gutter-sizer'
-
-	// 	});
-	// 	duong.imagesLoaded().progress( function() {
-	// 		duong.masonry('layout');
-	// 	});
-	// });
 
 
 	function balance(x){

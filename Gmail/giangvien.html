@@ -563,24 +563,48 @@
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="masonry.pkgd.min.js"></script>
-
 <script src="jquery.bxslider.min.js"></script>
 <script src="script.js"></script>
 <script>
 	
 	max = 0;
-	var a 	= $(".row2img > img");
+	var a 	= $(".row2img > a > img");
 
-	$(window).on('load',function(){
-		balance(a);
-		$('.grid').masonry({
-			columnWidth: '.grid-sizer',
-			itemSelector: '.grid-item',
-			gutter: '.gutter-sizer'
 
-		});
-	});
+		
+        $(function () {
+        		// balance(a);
+            var $grid = $('.grid').masonry({
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                isAnimated: true
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
+        });
+
+        $(window).on("resize", function () {
+        		// balance(a);
+            var $grid = $('.grid').masonry({
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                isAnimated: true
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
+        });
+
+	
+
+
 	function balance(x){
 
 		x.each(function(){
@@ -592,6 +616,7 @@
 
 	}
 	$(document).ready(function(){
+		// balance(a);
 		$('.bxslider').bxSlider();
 	});
 	$('.bxslider').bxSlider({

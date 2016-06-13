@@ -122,8 +122,8 @@ header a { font-size:20px; }
 	.button1, .button2 {
 		display: none;
 	}
-	.button3 { display: block; width: 50%; height: 30px; font-size: 15px; float: left; margin-top: 7px;}
-	.button4 { display: block; width: 50%; height: 30px; font-size: 15px; float: right; margin-top: 7px;}
+	.button3 { display: block; width: 49%; height: 30px; font-size: 15px; float: left; margin-top: 7px;}
+	.button4 { display: block; width: 49%; height: 30px; font-size: 15px; float: right; margin-top: 7px;}
 
 	.top-post h1 { font-size: 25px; !important }
 
