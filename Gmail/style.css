@@ -85,6 +85,10 @@ header a { font-size:20px; }
 .top1 { padding-right: 35px; }
 .top2 { padding-left: 35px;}
 
+/*ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+*/
 
 
 @media only screen and (max-width: 500px){
