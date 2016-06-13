@@ -230,7 +230,7 @@
 			</br>
 			Bà Đặng Thị Thu Hiền (Tiến sĩ)</br> 
 			Email: dt65_hien@yahoo.de</br>
-			DĐ: 0169 8200 975</br></p>
+			
 
 			
 		</p>
@@ -286,8 +286,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 		<b>Khóa 2013-2017 </b> </br>
 		<b>Khóa 2014-2018</b></br>
 		<b>Khoá 2015-2019 </b></br>
-		<b> Ngoại ngữ 2 </b></br>
-		<b>Các khóa đã tốt nghiệp</b>
+		
 	</p>
 
 	<p id="righttext">
@@ -311,10 +310,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 		Hội sinh viên </br>
 		Hoạt động Đoàn </br>
 		Hội sinh viên </br>
-		CLB tiếng Đức </br>
-		Cựu sinh viên </br>
-		Thư viện ảnh </br>
-
+		
 	</p>
 	
 </div>
@@ -345,7 +341,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 	</br>
 	<ul>
 		<li>Anmeldung zur 3. Internationalen Konferenz für Deutsch als Fremdsprache. </li>
-		<li> Einladung & Call for Papers zur 3. Internationalen Konferenz </li>
+		
 	</ul>
 	- Giảng viên Bùi Thị Thanh HIền -
 	
@@ -379,7 +375,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 	<p id="lefttext">
 		<ul>
 			<li> Danh sách sinh viên K15 đủ điều kiện thi hết môn KNT (lần 1) </li>
-			<li> Lịch thi lại các môn dịch 3, chuyên đề, kỹ năng tiếng 4 cho K11,K12 </li>
+			
 			
 		</ul>
 
@@ -503,8 +499,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 	<ul>
 		<li> Điều kiện dự tuyển </li>
 		<li> Chỉ tiêu tuyển dụng </li>
-		<li> Địa điểm làm việc </li>
-		<li> Vị trí tuyển dụng </li>
+		
 	</ul>
 </div>
 </div>
@@ -664,6 +659,7 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 	max = 0;
 	var a 	= $(".row2img > a > img");
 
+// load massonry after load
 	$(window).on('load',function(){
 		balance(a);
 		$('.grid').masonry({
@@ -673,6 +669,21 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 
 		});
 	});
+
+
+	//load massonry on change
+
+	$(window).on('change',function(){
+		balance(a);
+		$('.grid').masonry({
+			columnWidth: '.grid-sizer',
+			itemSelector: '.grid-item',
+			gutter: '.gutter-sizer'
+
+		});
+	});
+
+
 	function balance(x){
 
 		x.each(function(){

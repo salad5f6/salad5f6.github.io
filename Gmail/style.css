@@ -137,6 +137,7 @@ header a { font-size:20px; }
 	#foot { height: 100px; width: 100%; }
 	.lowertext { padding: 30px; padding-bottom: 0; padding-top: 2px;}
 	.lowertext h1 { font-size: 13px; color: white; }
+
 	.lowertext img { display: none; }
 	.headone { margin-bottom: -10px; }
 }
