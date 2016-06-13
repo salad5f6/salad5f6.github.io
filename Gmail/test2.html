@@ -4,11 +4,8 @@
 
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
 	<link href="jquery.bxslider.css" rel="stylesheet"/>
-	
-
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
@@ -660,34 +657,67 @@ Chương trình giáo dục đại học ngành tiếng Đức trước hết ph
 	var a 	= $(".row2img > a > img");
 
 // load massonry after load
-$(window).on('load',function(){
-	balance(a);
-	var duong = $('.grid').masonry({
-		columnWidth: '.grid-sizer',
-		itemSelector: '.grid-item',
-		gutter: '.gutter-sizer'
+// $(window).on('load',function(){
+// 	balance(a);
+// 	var duong = $('.grid').masonry({
+// 		columnWidth: '.grid-sizer',
+// 		itemSelector: '.grid-item',
+// 		gutter: '.gutter-sizer'
 
-	});
-	duong.imagesLoaded().progress( function() {
-			duong.masonry('layout');
-		});
-});
+// 	});
+// 	duong.imagesLoaded().progress( function() {
+// 			duong.masonry('layout');
+// 		});
+// });
+
+
+	
+        $(function () {
+        		balance(a);
+            var $grid = $('.grid').masonry({
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                isAnimated: true
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
+        });
+
+        $(window).on("resize", function () {
+        		balance(a);
+            var $grid = $('.grid').masonry({
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                isAnimated: true
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
+        });
+
+	
+
 
 
 	//load massonry on change
 
-	$(window).on('change',function(){
-		balance(a);
-		var duong = $('.grid').masonry({
-			columnWidth: '.grid-sizer',
-			itemSelector: '.grid-item',
-			gutter: '.gutter-sizer'
+	// $(window).on('change',function(){
+	// 	balance(a);
+	// 	var duong = $('.grid').masonry({
+	// 		columnWidth: '.grid-sizer',
+	// 		itemSelector: '.grid-item',
+	// 		gutter: '.gutter-sizer'
 
-		});
-		duong.imagesLoaded().progress( function() {
-			duong.masonry('layout');
-		});
-	});
+	// 	});
+	// 	duong.imagesLoaded().progress( function() {
+	// 		duong.masonry('layout');
+	// 	});
+	// });
 
 
 	function balance(x){
@@ -701,6 +731,7 @@ $(window).on('load',function(){
 
 	}
 	$(document).ready(function(){
+		// balance(a);
 		$('.bxslider').bxSlider();
 	});
 	$('.bxslider').bxSlider({
