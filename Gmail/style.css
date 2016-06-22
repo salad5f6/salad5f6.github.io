@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 .slider {
       width: 90%;
       margin: 20px auto;
@@ -20,9 +21,9 @@
     .slick-dots li { display: none; }
     .slider button { display: none; }
 
-     .box { background-color:#2b2c32; height: 75px; }
-     .box:hover { background-color: #1D6EAF; }  
-    .box a { color: white; text-decoration: none; padding-top: 2px;  }
+     .box { background-color:#2b2c32; height: 75px;   transition: 0.4s;font-family: 'Montserrat', sans-serif; }
+     .box:hover { background-color:#427994; padding-top: 1px; }  
+    .box a { color: white; text-decoration: none;  }
     .box { padding: 10px;text-align:center }
     .box a:visited { color: white;  }
     .box a:hover { color: white;  }
