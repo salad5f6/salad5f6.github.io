@@ -214,7 +214,7 @@ header nav a { font-size:20px; }
 
 	}
 
-	#tag {  width: 90%; margin: auto; height: 1px; background-color: grey;
+	#tag {  width: 90%; margin: auto; height: 1px; background-color: rgba(0,0,0,0.27);
 	}
 	
 	/*.midbody { height: 10px; width: 100%; background-color: black;}*/
