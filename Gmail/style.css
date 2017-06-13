@@ -31,7 +31,9 @@
     .box a:link { color: white;  }
     .box a { font-size: 13px; }
 
-
+/*.headone {
+	background-image: url("download.jpg");
+}*/
 section { background-color: white; }
 body { background-color: rgba(216, 216, 216, 0.67);; }
 .abteilung a { font-size: 25px;}
@@ -212,11 +214,11 @@ header nav a { font-size:20px; }
 
 	}
 
-	#tag {  width: 100%; margin: auto; height: 50px; background-color: #E44E43;
-	}
+	/*#tag {  width: 100%; margin: auto; height: 50px; background-color: #E44E43;
+	}*/
 	
-	.midbody { height: 10px; width: 100%; background-color: black;}
-	.lowerbody { width: 100%; background-image: url('download.jpg'); box-shadow: 0 0px 17px 0; margin-bottom: 100px; }
+	/*.midbody { height: 10px; width: 100%; background-color: black;}*/
+	.lowerbody { width: 100%; /*background-image: url('download.jpg'); box-shadow: 0 0px 17px 0;*/ margin-bottom: 100px; }
 
 	.headone {
 		padding-right: 0;
@@ -226,8 +228,9 @@ header nav a { font-size:20px; }
 
 
 	.grid-item {   background-color: white;
-		box-shadow: 0 5px 5px 0;
+		box-shadow: 0px 0px 2px 0;
 		margin-bottom: 20px; }
+
 		.innertext { padding: 15px; }
 		.grid-item { width: 23.5%;}
 		.grid-sizer { width: 23.5%; }
