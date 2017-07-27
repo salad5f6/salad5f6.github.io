@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">	
+</script>
+
+
+
+<script>
+
+		// function balance(x){
+
+		// x.each(function(){
+		// 	if($(this)[0].height > max){
+		// 		max = $(this)[0].height;
+		// 	}
+		// });
+		// x.height(max);
+
+
+
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+   	 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("wholenavbar").style.backgroundColor = "white" 
+        ;
+    }	else if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
+    	document.getElementById("wholenavbar").style.backgroundColor = "rgba(0,0,0,0.5)"
+    	;
+    }
+    	// else if ( document.body.scrollTop >== 700 || document.documentElement.scrollTop >== 700) {
+    	// document.getElementById("wholenavbar").style.backgroundColor = "white";
+    	// }
+	}	
+
+		
+
+</script>
+
+
+<style type="text/css">
+
+
+
+	 .navbar-inverse .navbar-nav>li>a:hover {
+		color: #da1a1a;
+	}
+		.navbar-inverse .navbar-nav>li>a:visited {
+		color: none;
+	}
+
+	body {
+		background-color: white;
+		box-sizing: border-box;
+		
+		margin: auto;
+		
+	}
+	
+	
+	.navbar-inverse {
+    background-color: rgba(0,0,0,0.3);
+
+    border:none;
+    
+
+	}
+	.navbar-inverse .navbar-nav>li>a { color: #6fa6d6; }
+
+
+	.container-fluid {
+		padding-left: 80px;
+	}
+	.navbar-nav>li>a {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+
+	}
+
+	.smallone {
+			margin: 12px;
+	}
+	
+
+	.carousel, .item, .active {
+    height: 67%;
+	}
+
+	.carousel {
+    position: relative;
+}
+
+	#findmore:hover {
+		background-color: rgba(111, 166, 214, 0.56);}
+
+
+</style>
+
+</head>
+<body>
+	<header id="myCarousel" class="carousel slide">
+
+	<!-- đây là cái carousel -->
+	
+	<ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image: url('head.jpg');height:600px;width:100%;"></div>
+        
+                <div id="smalltextbox" style="height:65%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;  left: 55%;
+   					 top: 60%; z-index:2000;">	
+
+   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Đặt phòng  </a>
+   					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
+   					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+   					 	</p>
+   					 	
+				</div>
+				<!-- đây là cái box nhỏ đen
+ -->
+
+
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image: url('head1.jpg');height:600px;width:100%;"></div>
+
+                <div id="smalltextbox" style="height:65%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;  left: 55%;
+   					 top: 60%; z-index:2000;">	
+
+   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Dịch vụ nghỉ dưỡng  </a>
+   					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
+   					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+   					 	</p>
+   					 	
+				</div>
+
+               
+            </div>
+           <!--  đây là cái box nhỏ đen thứ 2 -->
+
+
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image: url('head2.jpg');height:600px;width:100%;"></div>
+                
+                <div id="smalltextbox" style="height:65%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;  left: 55%;
+   					 top: 60%; z-index:2000;">	
+
+   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Ẩm thực  </a>
+   					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
+   					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+   					 	</p>   					 	
+				</div>
+            </div>
+        </div>
+         <a class="left carousel-control" href="#myCarousel" data-slide="prev" >
+            <span class="icon-prev" ></span>
+        	</a>
+       	 <a class="right carousel-control" href="#myCarousel" data-slide="next" >
+            <span class="icon-next" ></span>
+        	</a>
+
+      <!-- đoạn trên này đéo hiểu lắm. someone helps me somehow -->
+      <!-- cần tìm cách giáu 2 cái thanh đen bên sides -->
+
+
+    
+		
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="wholenavbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+   <!--    <a class="navbar-brand" href="#" style="color: black;     font-size: 17px;"><b> THE Q PLAZA </b></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#" style="color:white; background-color:#6fa6d6; font-size:23px;" ><b>THE QPLAZA </b><br ><span style="font-size:13px; text-align:justify;"> HOTELS AND RESORTS </span ></br><span class="sr-only">(current)</span></a></li>
+
+        <li class="navbox smallone"><a href="#"> Hotels and resort </a></li>
+        <li class="navbox smallone"><a href="#"> Booking </a></li>
+      	<li class="navbox smallone"><a href="#"> Wedding </a></li>
+        <li class="navbox smallone"><a href="#"> Meetings </a></li>
+        <li class="navbox smallone"><a href="#"> Locations </a></li>
+       
+        
+      </ul>
+    
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li class="smallone"><a href="#" style="font-size:13px">Sign in</a></li>
+        
+      </ul> -->
+    </div><!-- /.navbar-collapse -->
+  	</div><!-- /.container-fluid -->
+	</nav>
+
+	
+
+	</header>
+
+	<section class="container" > 
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:100px;">
+				
+				
+				
+			</div>
+		</div>
+		<!-- <div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div id="findmore" style="    width: 20%;    margin-top: 13px;margin-bottom: 40px;
+    				height: 100px;
+    				margin-left: 40%;">
+    			<img src="down.png" class="img-responsive" style="height:40px;width:40px;display:block;    margin-left: 40%;    padding-top: 2%;">
+				<p style="text-align:center;font-size:20px;padding-top:13px;color:#6fa6d6;"> Tìm hiểu thêm </p>
+				</div>
+			</div>
+		</div> -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<p style="text-align:center;font-size:30px;"> Chào mừng đến với khách sạn THE QPLAZA </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<span style="text-align:center;color:grey;"><p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p></span>
+				<p style="text-align:center;"> Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin 
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum </p>
+			</div>
+		</div>
+		<div class="row" style="padding-top:60px;padding-bottom:60px;">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div style="background-color:#f2f2f2; padding-top: 17%;
+    			padding-bottom: 17%;
+}">
+
+				<img src="checkbox.png" class="img-responsive" style="height:60px;width:60px;    margin-left: 42%;    margin-bottom: 10%;">
+				<span style="text-align:center;font-size:20px;"><p><b> Đảm bảo chất lượng </b></p>
+					<p style="text-align:center;font-size:14px;">  Đảm bảo việc đặt phòng ốc mọi lúc </p>
+				</span>
+				
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div style="background-color:#f2f2f2;     padding-top: 17%;
+    			padding-bottom: 17%;
+}">
+				
+				<img src="giftbox.png" class="img-responsive" style="height:60px;width:60px;    margin-left: 42%;    margin-bottom: 10%;">
+				<span style="text-align:center;font-size:20px;"><p><b> Thanh toán </b></p>
+					<p style="text-align:center;font-size:14px;">  Chấp nhận các kiểu thanh toán </p>
+				</span>
+				
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div style="background-color:#f2f2f2;     padding-top: 17%;
+    			padding-bottom: 17%;
+}">
+
+				<img src="wifi.png" class="img-responsive" style="height:60px;width:60px;    margin-left: 42%;    margin-bottom: 10%;">
+				<span style="text-align:center;font-size:20px;"><p><b> Kết nối Internet</b></p>
+					<p style="text-align:center;font-size:14px;">  Wi-fi tốc độ cao mọi lúc mọi nơi </p>
+				</span>
+				
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<p style="text-align:center;font-size:30px;"> Phòng ốc các kiểu </p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<span style="text-align:center;color:grey;"><p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p></span>
+				<p style="text-align:center;"> Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin 
+There are many variations of passa </p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div style="background-image: url('body2.jpg');height:400px;width:100%;margin-top:60px;"></div>
+				<div id="" style="height:50%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;      left: 53.5%;
+    top: 35%; z-index:2000;">	
+
+   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Thanh  </a>
+   					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
+   					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+   					 	</p>
+   					 	
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top:60px;">
+				<p style="text-align:center;font-size:30px;"> Dịch vụ </p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<span style="text-align:center;color:grey;"><p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p></span>
+				<p style="text-align:center;"> Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin 
+There are many variations of passa </p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div style="background-image: url('body3.jpg');height:400px;width:100%;margin-top:60px;"></div>
+				<div id="" style="height:50%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;      left: 53.5%;
+    top: 35%; z-index:2000;">	
+
+   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Thanh  </a>
+   					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
+   					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+   					 	</p>
+   					 	
+				</div>
+			</div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+		<div style="height:5000px;">
+			<img href=".smallone" src="top.png" style="position:fixed;opacity: 60%;
+    top: 90%;
+    left: 90%;
+    width:50px;
+    height: 50px; ">
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+	
+</body>
+</html>

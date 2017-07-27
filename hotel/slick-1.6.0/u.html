@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+  <style type="text/css">
+
+
+    .slider {
+      width: 90%;
+      margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 5px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-dots li { display: none; }
+    .slider button { display: none; }
+
+    .box { background-color: white;  border-top: 1px solid; border-color: grey;  }
+    .box a { color: black; text-decoration: none; padding-top: 2px; }
+    .box { padding: 10px; }
+
+
+
+
+    
+  </style>
+</head>
+<body>
+
+  <section class="vu slider">
+
+
+
+    <div class="box">
+      <a href="#"> Thông tin tuyển dụng: 
+        Vị trí tuyển dụng: Giáo viên dạy tiếng Đức
+      </a>
+    </div>
+
+    <div  class="box">
+      <a href="#"> Công ty cổ phần Hòn Ngọc Đông Dương (IndochinaPearl JSC.,) và IndochinaTravels Frankfurt </a>
+    </div>
+
+    <div  class="box">
+     <a href="#">Sen Travel Group - Tuyển nhân viên và thực tập sinh tiếng Đức </a>
+   </div>
+
+   <div  class="box">
+    <a href="#">Danh sách sv thiếu tài khoản thẻ ATM </a>
+  </div>
+
+  <div  class="box">
+    <a href="#"> Thông báo bổ sung cho sinh viên về đợt học QPAN tháng 6 </a>
+  </div>
+
+  <div  class="box">
+   <a href="#">Thông báo về việc xét cấp học bổng khuyến khích học tập học kỳ 2 năm học 2015-2016 </a>
+ </div>
+
+
+
+
+</section>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="slick/slick.js" ></script>
+<script>
+
+  $(document).ready(function(){
+    $('.vu').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });
+  });
+
+
+</script>
+
+
+</body>
+</html>
