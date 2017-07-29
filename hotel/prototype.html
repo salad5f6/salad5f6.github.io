@@ -3,10 +3,17 @@
 <head>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+ </script>
+
+  
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,6 +21,7 @@
     
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">	
 </script>
+
 
 
 
@@ -30,20 +38,36 @@
 
 
 
+
 		window.onscroll = function() {myFunction()};
 
 		function myFunction() {
    	 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("wholenavbar").style.backgroundColor = "white" 
+        document.getElementById("topbar").style.backgroundColor = "white" 
         ;
-    }	else if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
-    	document.getElementById("wholenavbar").style.backgroundColor = "rgba(0,0,0,0.5)"
+    }	else {
+    	document.getElementById("topbar").style.backgroundColor = "rgba(0,0,0,0.7)"
     	;
+
+    	// document.getElementsByClass("smallone").style.color = "#6fa6d6"
+    	// ;
     }
-    	// else if ( document.body.scrollTop >== 700 || document.documentElement.scrollTop >== 700) {
-    	// document.getElementById("wholenavbar").style.backgroundColor = "white";
-    	// }
 	}	
+
+
+
+
+	// 	window.onscroll = function() {myFunction1()};
+
+	// 	function myFunction1() {
+ //   	 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+ //        document.getElementsByClass("smallone").style.color = "#6fa6d6;" 
+ //        ;
+ //    }	else if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
+ //    	document.getElementsByClass("smallone").style.color = "white"
+ //    	;
+ //    }
+	// }	
 
 		
 
@@ -55,7 +79,7 @@
 
 
 	 .navbar-inverse .navbar-nav>li>a:hover {
-		color: #da1a1a;
+		color: black;
 	}
 		.navbar-inverse .navbar-nav>li>a:visited {
 		color: none;
@@ -71,24 +95,24 @@
 	
 	
 	.navbar-inverse {
-    background-color: rgba(0,0,0,0.6);
+    background-color: #6fa6d6;
 
     border:none;
     
 
 	}
-	.navbar-inverse .navbar-nav>li>a { color: #6fa6d6; }
+	.navbar-inverse .navbar-nav>li>a { color: white; }
 
 
 	.container-fluid {
 		padding-left: 80px;
 	}
 	.navbar-nav>li>a {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 17px;
+    font-size: 16px;
 
 	}
 
@@ -97,27 +121,117 @@
 	}
 	
 
-	.carousel, .item, .active {
+	/*.carousel, .item, .active {
     height: 67%;
 	}
-
+*/
 	.carousel {
-    position: relative;
-}
+		position: relative;
+	}
 
 	#findmore:hover {
 		background-color: rgba(111, 166, 214, 0.56);}
+
+	.carousel-indicators {
+    bottom: 90px;
+	}
+
+
+
+
 
 
 </style>
 
 </head>
 <body>
+	<div id="topbar" style="height:72px;width:100%;background-color:rgba(0, 0,0, 0.7);position:fixed;z-index:50;">
+		
+			
+			<img src="theq.png" class="img-responsive" style="width:20%;height:64px;    padding-top: 7px;    margin-top: 6px;float:left;">
+			<div style="float:right;   
+    				margin-right: 10%;
+   					 margin-top: 1%; ">
+				<span style="color:#6fa6d6;">   
+
+				<p> <i class="glyphicon glyphicon-map-marker"></i> <b>theQplaza Hotel</b> : K5 Nghi Tam, 11 Xuan Dieu Road, Tay Ho District, Danang.</p>
+				<p> <i class="glyphicon glyphicon-map-marker"></i> Phone: 84-24-3719-9000  •  Hotel Reservations: 12065111</p></span>
+			</div>
+			
+		
+
+	</div>
+
 	<header id="myCarousel" class="carousel slide">
 
 	<!-- đây là cái carousel -->
+
+		<div id="bookbox" style="    width: 24%;
+   			 height: 340px;
+    		background-color:rgba(255, 255, 255, 0.89);
+    		position: absolute;
+    		left: 2%;
+    		top: 30%;
+    		z-index: 30;">
+    		<div style="height:50px;width:100%;background-color:rgba(0,0,0,0.05);color: #6fa6d6;">
+    			<span style="display:block;padding-top: 3%;"><p style="text-align:center;font-size:21px;" ><b> ĐẶT PHÒNG</b> </p></span>
+    		</div>
+
+    		<div style="margin:7%;">
+    		<form >
+    		<div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+  </div>
+  </br>
+  			<div>
+ 			 <label style="color:#6fa6d6;"><i class="glyphicon glyphicon-calendar"></i> Check in </label>
+ 				<input type="date" placeholder="check-in" style="margin-left: 20px;">
+ 			 </div>
+ 			 <div>
+ 			 <label style="color:#6fa6d6;"><i class="glyphicon glyphicon-calendar"></i> Check out </label>
+ 			 
+ 			 <input type="date" placeholder="check-out" style="margin-left: 10px;">
+			</div>			
+			<div>
+			</br>
+				<form>
+    <div class="form-group">
+     
+      <select class="form-control" id="sel1">
+      	 <option style="color:white;"><b>Số lượng phòng..</b></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      
+      
+      <select class="form-control" id="sel2" style="margin-top: 2%;">
+      	 <option style="color:white;"><b>Loại phòng..</b></option>
+        <option> Phòng đơn</option>
+        <option> Phòng đôi</option>
+        <option> Phòng ba</option>
+        <option> Phòng Deluxe </option>
+      </select>
+    </div>
+  </form>
+			</div>
+			 <button type="submit" class="btn btn-default" style="background-color: #6fa6d6;color:white;">Submit</button>
+			</form>
+
+
+			</div>
+  
+
+		</div>
+
+
+
+
+
 	
-	<ol class="carousel-indicators">
+		<ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -129,15 +243,26 @@
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image: url('head.jpg');height:600px;width:100%;"></div>
         
-                <div id="smalltextbox" style="height:65%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;  left: 55%;
-   					 top: 60%; z-index:2000;">	
 
-   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Đặt phòng  </a>
+
+                <div id="smalltextbox" style="  height: 28%;
+    width: 43%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 57%;
+    top: 70%;
+    z-index: 2000;">	
+
+   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Về chúng tôi  </a>
+   					 	
    					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
    					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
    					 	</p>
    					 	
 				</div>
+
+
+
 				<!-- đây là cái box nhỏ đen
  -->
 
@@ -147,15 +272,22 @@
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image: url('head1.jpg');height:600px;width:100%;"></div>
 
-                <div id="smalltextbox" style="height:65%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;  left: 55%;
-   					 top: 60%; z-index:2000;">	
+               
+                <div id="smalltextbox" style="    height: 28%;
+    width: 43%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 57%;
+    top: 70%;
+    z-index: 2000;">	
 
-   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Dịch vụ nghỉ dưỡng  </a>
+   					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Dịch vụ  </a>
    					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
    					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
    					 	</p>
    					 	
 				</div>
+
 
                
             </div>
@@ -166,14 +298,26 @@
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image: url('head2.jpg');height:600px;width:100%;"></div>
                 
-                <div id="smalltextbox" style="height:65%;width:45%;background-color:rgba(0,0,0,0.5);position:absolute;  left: 55%;
-   					 top: 60%; z-index:2000;">	
+                <div id="smalltextbox" style="   height: 28%;
+    width: 43%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 57%;
+    top: 70%;
+    z-index: 2000;">	
 
    					 	<a href="#" style="color:white;font-size:20px;margin: 3%;display:block;"> Ẩm thực  </a>
    					 	<p style="color:white;font-size:15px;color: white;margin: 3%">
    					 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-   					 	</p>   					 	
+   					 	</p>
+   					 	
 				</div>
+
+
+
+
+
+
             </div>
         </div>
          <a class="left carousel-control" href="#myCarousel" data-slide="prev" >
@@ -186,10 +330,7 @@
       <!-- đoạn trên này đéo hiểu lắm. someone helps me somehow -->
       <!-- cần tìm cách giáu 2 cái thanh đen bên sides -->
 
-
-    
-		
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="wholenavbar">
+     <nav class="navbar navbar-inverse" id="wholenavbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -205,13 +346,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#" style="color:white; background-color:#6fa6d6; font-size:23px;" ><b>THE QPLAZA </b><br ><span style="font-size:13px; text-align:justify;"> HOTELS AND RESORTS </span ></br><span class="sr-only">(current)</span></a></li>
+       <!--  <li class="active"><a href="#" style="color:white; background-color:#6fa6d6; font-size:23px;" ><b>THE QPLAZA </b><br ><span style="font-size:13px; text-align:justify;"> HOTELS AND RESORTS </span ></br><span class="sr-only">(current)</span></a></li> -->
 
-        <li class="navbox smallone"><a href="#"> Hotels and resort </a></li>
-        <li class="navbox smallone"><a href="#"> Booking </a></li>
-      	<li class="navbox smallone"><a href="#"> Wedding </a></li>
-        <li class="navbox smallone"><a href="#"> Meetings </a></li>
-        <li class="navbox smallone"><a href="#"> Locations </a></li>
+        <li class="navbox smallone"><a href="#"><b> Đặt phòng</b> </a></li>
+        <li class="navbox smallone"><a href="#"><b> Sự kiện và hội nghị </b></a></li>
+      	<li class="navbox smallone"><a href="#"><b> Loại phòng </b></a></li>
+        <li class="navbox smallone"><a href="#"><b> Ưu đãi </b></a></li>
+        <li class="navbox smallone"><a href="#"><b> Dịch vụ </b></a></li>
+        <li class="navbox smallone"><a href="#"><b> Khu vực </b></a></li>
+        <li class="navbox smallone"><a href="#"><b> Liên hệ </b></a></li>
+
        
         
       </ul>
@@ -222,13 +366,17 @@
       </ul> -->
     </div><!-- /.navbar-collapse -->
   	</div><!-- /.container-fluid -->
-	</nav>
+	</nav> 
+    
+		
+	
 
 	
 
 	</header>
 
 	<section class="container" > 
+
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:100px;">
 				
@@ -370,13 +518,12 @@ There are many variations of passa </p>
 
 
 
-		<div style="height:5000px;">
-			<img href=".smallone" src="top.png" style="position:fixed;opacity: 60%;
-    top: 90%;
-    left: 90%;
-    width:50px;
-    height: 50px; ">
-		</div>
+		<!-- <div style="height:5000px;">
+			<img href=".smallone" src="top.png" style="position:fixed;    top: 90%;
+    left: 96%;
+    width: 40px;
+    height: 40px; ">
+		</div> -->
 	</section>
 	<footer>
 		
